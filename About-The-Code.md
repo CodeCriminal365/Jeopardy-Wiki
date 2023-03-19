@@ -79,7 +79,7 @@ categories = {
 
 ## Shuffle:
  
-        ```python3
+       ```
 
         for category in category_order:
             print(category)
