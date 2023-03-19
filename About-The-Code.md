@@ -3,8 +3,9 @@
 ## Import Libs:
 `import random`
 ## Intro And Credits Functions
-
-`def intro():
+### Intro
+ ```python3
+ def intro():
     readme = open("readme.txt", "r")
     print("             Intro              ")
     print("================================")
@@ -13,18 +14,24 @@
     print(" ")
     print("================================")
 
-def credits():
+ ```
+### Credits
+ ```python3
+ def credits():
     print(" ")
     print("Your Score Is:", score, "Out Of 24 Questions!")
     credits = open("credits.txt", "r")
     print(" ")
     print(credits.read())
     print(" ")
-    print("================================")`
+    print("================================")
+
+```
 
 ## Question Variable:
+```python3
 
-`# Create a list of categories and their corresponding questions and answers
+# Create a list of categories and their corresponding questions and answers
 categories = {
     "History": [
         {"question": "What year did World War I start?", "answer": "1914"},
@@ -66,18 +73,26 @@ categories = {
         {"question": "This author wrote 'To Kill a Mockingbird'.", "answer": "Harper Lee"},
         {"question": "This author wrote 'The Catcher in the Rye.'", "answer": "J.D. Salinger"},
     ]
-}`
+}
 
-## Shuffle: 
+```
 
-       `for category in category_order:
+## Shuffle:
+ 
+        ```python3
+
+        for category in category_order:
             print(category)
             print("=============")
             questions = categories[category]
-            random.shuffle(questions)`
+            random.shuffle(questions)
+       
+       ```
 ## Display: 
 
-        `for question in questions:
+```python3
+
+        for question in questions:
              print(question["question"])
              answer = input("What is the answer? ")
              if answer.lower() == question["answer"].lower():
@@ -85,4 +100,6 @@ categories = {
                score = score + 1
              else:
                print("Incorrect. The answer is", question["answer"])
-             print(" ")`
+             print(" ")
+
+```
